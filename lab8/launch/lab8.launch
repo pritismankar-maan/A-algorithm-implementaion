@@ -1,0 +1,8 @@
+																																																																																																																																																																																																																																																																																																																																																																																																																		<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab8)/lab8_material/playground.world" />  
+	<node name="a_star_node" pkg="lab8" type="a_star.py" output="screen" />
+	<param name = 'goal_pose_x' value='2.00'  />
+	<param name = 'goal_pose_y' value='8.00'  />
+	<param name = 'goal_pose_z' value='0'  />    
+</launch>
